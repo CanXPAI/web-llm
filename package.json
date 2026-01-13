@@ -1,5 +1,5 @@
 {
-  "name": "@mlc-ai/web-llm",
+  "name": "canxp-webllm",
   "version": "0.2.80",
   "description": "Hardware accelerated language model chats on browsers",
   "main": "lib/index.js",
