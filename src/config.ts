@@ -289,7 +289,7 @@ export interface AppConfig {
  */
 export const modelVersion = "v0_2_80";
 export const modelLibURLPrefix =
-  "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/";
+  "https://canxp.ai/web-llm-models/";
 
 /**
  * Models that support function calling (i.e. usage of `ChatCompletionRequest.tools`). More to come.
@@ -313,7 +313,7 @@ export const prebuiltAppConfig: AppConfig = {
   model_list: [
     // Llama-3.2
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3.2-1B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Llama-3.2-1B-Instruct-q4f32_1-MLC",
       model_id: "Llama-3.2-1B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -326,7 +326,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3.2-1B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Llama-3.2-1B-Instruct-q4f16_1-MLC",
       model_id: "Llama-3.2-1B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -340,7 +340,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // TODO: temporarily commenting out q0f32 models due to correctness issues
     // {
-    //   model: "https://huggingface.co/mlc-ai/Llama-3.2-1B-Instruct-q0f32-MLC",
+    //   model: "https://canxp.ai/models/Llama-3.2-1B-Instruct-q0f32-MLC",
     //   model_id: "Llama-3.2-1B-Instruct-q0f32-MLC",
     //   model_lib:
     //     modelLibURLPrefix +
@@ -353,7 +353,7 @@ export const prebuiltAppConfig: AppConfig = {
     //   },
     // },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3.2-1B-Instruct-q0f16-MLC",
+      model: "https://canxp.ai/models/Llama-3.2-1B-Instruct-q0f16-MLC",
       model_id: "Llama-3.2-1B-Instruct-q0f16-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -366,7 +366,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3.2-3B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Llama-3.2-3B-Instruct-q4f32_1-MLC",
       model_id: "Llama-3.2-3B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -379,7 +379,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3.2-3B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Llama-3.2-3B-Instruct-q4f16_1-MLC",
       model_id: "Llama-3.2-3B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -393,7 +393,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Llama-3.1
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3.1-8B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Llama-3.1-8B-Instruct-q4f32_1-MLC",
       model_id: "Llama-3.1-8B-Instruct-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -406,7 +406,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3.1-8B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Llama-3.1-8B-Instruct-q4f16_1-MLC",
       model_id: "Llama-3.1-8B-Instruct-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -419,7 +419,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3.1-8B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Llama-3.1-8B-Instruct-q4f32_1-MLC",
       model_id: "Llama-3.1-8B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -432,7 +432,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3.1-8B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Llama-3.1-8B-Instruct-q4f16_1-MLC",
       model_id: "Llama-3.1-8B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -447,7 +447,7 @@ export const prebuiltAppConfig: AppConfig = {
     // DeepSeek-R1-Distill-Qwen
     // TODO(Charlie): Qwen2-1.5B is experiencing correctness issue, hence commented for now.
     // {
-    //   model: "https://huggingface.co/mlc-ai/DeepSeek-R1-Distill-Qwen-1.5B-q4f16_1-MLC",
+    //   model: "https://canxp.ai/models/DeepSeek-R1-Distill-Qwen-1.5B-q4f16_1-MLC",
     //   model_id: "DeepSeek-R1-Distill-Qwen-1.5B-q4f16_1-MLC",
     //   model_lib:
     //     modelLibURLPrefix +
@@ -460,7 +460,7 @@ export const prebuiltAppConfig: AppConfig = {
     //   },
     // },
     // {
-    //   model: "https://huggingface.co/mlc-ai/DeepSeek-R1-Distill-Qwen-1.5B-q4f32_1-MLC",
+    //   model: "https://canxp.ai/models/DeepSeek-R1-Distill-Qwen-1.5B-q4f32_1-MLC",
     //   model_id: "DeepSeek-R1-Distill-Qwen-1.5B-q4f32_1-MLC",
     //   model_lib:
     //     modelLibURLPrefix +
@@ -474,7 +474,7 @@ export const prebuiltAppConfig: AppConfig = {
     // },
     {
       model:
-        "https://huggingface.co/mlc-ai/DeepSeek-R1-Distill-Qwen-7B-q4f16_1-MLC",
+        "https://canxp.ai/models/DeepSeek-R1-Distill-Qwen-7B-q4f16_1-MLC",
       model_id: "DeepSeek-R1-Distill-Qwen-7B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -488,7 +488,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/DeepSeek-R1-Distill-Qwen-7B-q4f32_1-MLC",
+        "https://canxp.ai/models/DeepSeek-R1-Distill-Qwen-7B-q4f32_1-MLC",
       model_id: "DeepSeek-R1-Distill-Qwen-7B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -503,7 +503,7 @@ export const prebuiltAppConfig: AppConfig = {
     // DeepSeek-R1-Distill-Llama
     {
       model:
-        "https://huggingface.co/mlc-ai/DeepSeek-R1-Distill-Llama-8B-q4f32_1-MLC",
+        "https://canxp.ai/models/DeepSeek-R1-Distill-Llama-8B-q4f32_1-MLC",
       model_id: "DeepSeek-R1-Distill-Llama-8B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -517,7 +517,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/DeepSeek-R1-Distill-Llama-8B-q4f16_1-MLC",
+        "https://canxp.ai/models/DeepSeek-R1-Distill-Llama-8B-q4f16_1-MLC",
       model_id: "DeepSeek-R1-Distill-Llama-8B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -532,7 +532,7 @@ export const prebuiltAppConfig: AppConfig = {
     // Hermes-3 and Hermes-2
     {
       model:
-        "https://huggingface.co/mlc-ai/Hermes-2-Theta-Llama-3-8B-q4f16_1-MLC",
+        "https://canxp.ai/models/Hermes-2-Theta-Llama-3-8B-q4f16_1-MLC",
       model_id: "Hermes-2-Theta-Llama-3-8B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -546,7 +546,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Hermes-2-Theta-Llama-3-8B-q4f32_1-MLC",
+        "https://canxp.ai/models/Hermes-2-Theta-Llama-3-8B-q4f32_1-MLC",
       model_id: "Hermes-2-Theta-Llama-3-8B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -560,7 +560,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Hermes-2-Pro-Llama-3-8B-q4f16_1-MLC",
+        "https://canxp.ai/models/Hermes-2-Pro-Llama-3-8B-q4f16_1-MLC",
       model_id: "Hermes-2-Pro-Llama-3-8B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -574,7 +574,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Hermes-2-Pro-Llama-3-8B-q4f32_1-MLC",
+        "https://canxp.ai/models/Hermes-2-Pro-Llama-3-8B-q4f32_1-MLC",
       model_id: "Hermes-2-Pro-Llama-3-8B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -587,7 +587,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Hermes-3-Llama-3.2-3B-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Hermes-3-Llama-3.2-3B-q4f32_1-MLC",
       model_id: "Hermes-3-Llama-3.2-3B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -600,7 +600,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Hermes-3-Llama-3.2-3B-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Hermes-3-Llama-3.2-3B-q4f16_1-MLC",
       model_id: "Hermes-3-Llama-3.2-3B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -613,7 +613,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Hermes-3-Llama-3.1-8B-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Hermes-3-Llama-3.1-8B-q4f32_1-MLC",
       model_id: "Hermes-3-Llama-3.1-8B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -626,7 +626,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Hermes-3-Llama-3.1-8B-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Hermes-3-Llama-3.1-8B-q4f16_1-MLC",
       model_id: "Hermes-3-Llama-3.1-8B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -640,7 +640,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Hermes-2-Pro-Mistral-7B-q4f16_1-MLC",
+        "https://canxp.ai/models/Hermes-2-Pro-Mistral-7B-q4f16_1-MLC",
       model_id: "Hermes-2-Pro-Mistral-7B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -656,7 +656,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Phi3.5-mini-instruct
     {
-      model: "https://huggingface.co/mlc-ai/Phi-3.5-mini-instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Phi-3.5-mini-instruct-q4f16_1-MLC",
       model_id: "Phi-3.5-mini-instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -669,7 +669,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Phi-3.5-mini-instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Phi-3.5-mini-instruct-q4f32_1-MLC",
       model_id: "Phi-3.5-mini-instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -682,7 +682,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Phi-3.5-mini-instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Phi-3.5-mini-instruct-q4f16_1-MLC",
       model_id: "Phi-3.5-mini-instruct-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -695,7 +695,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Phi-3.5-mini-instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Phi-3.5-mini-instruct-q4f32_1-MLC",
       model_id: "Phi-3.5-mini-instruct-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -710,7 +710,7 @@ export const prebuiltAppConfig: AppConfig = {
     // Phi-3.5-vision-instruct
     {
       model:
-        "https://huggingface.co/mlc-ai/Phi-3.5-vision-instruct-q4f16_1-MLC",
+        "https://canxp.ai/models/Phi-3.5-vision-instruct-q4f16_1-MLC",
       model_id: "Phi-3.5-vision-instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -725,7 +725,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Phi-3.5-vision-instruct-q4f32_1-MLC",
+        "https://canxp.ai/models/Phi-3.5-vision-instruct-q4f32_1-MLC",
       model_id: "Phi-3.5-vision-instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -741,7 +741,7 @@ export const prebuiltAppConfig: AppConfig = {
     // Mistral variants
     {
       model:
-        "https://huggingface.co/mlc-ai/Mistral-7B-Instruct-v0.3-q4f16_1-MLC",
+        "https://canxp.ai/models/Mistral-7B-Instruct-v0.3-q4f16_1-MLC",
       model_id: "Mistral-7B-Instruct-v0.3-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -757,7 +757,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Mistral-7B-Instruct-v0.3-q4f32_1-MLC",
+        "https://canxp.ai/models/Mistral-7B-Instruct-v0.3-q4f32_1-MLC",
       model_id: "Mistral-7B-Instruct-v0.3-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -772,7 +772,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Mistral-7B-Instruct-v0.2-q4f16_1-MLC",
+        "https://canxp.ai/models/Mistral-7B-Instruct-v0.2-q4f16_1-MLC",
       model_id: "Mistral-7B-Instruct-v0.2-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -788,7 +788,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/OpenHermes-2.5-Mistral-7B-q4f16_1-MLC",
+        "https://canxp.ai/models/OpenHermes-2.5-Mistral-7B-q4f16_1-MLC",
       model_id: "OpenHermes-2.5-Mistral-7B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -804,7 +804,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/NeuralHermes-2.5-Mistral-7B-q4f16_1-MLC",
+        "https://canxp.ai/models/NeuralHermes-2.5-Mistral-7B-q4f16_1-MLC",
       model_id: "NeuralHermes-2.5-Mistral-7B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -819,7 +819,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/WizardMath-7B-V1.1-q4f16_1-MLC",
+      model: "https://canxp.ai/models/WizardMath-7B-V1.1-q4f16_1-MLC",
       model_id: "WizardMath-7B-V1.1-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -835,7 +835,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // SmolLM2
     {
-      model: "https://huggingface.co/mlc-ai/SmolLM2-1.7B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/SmolLM2-1.7B-Instruct-q4f16_1-MLC",
       model_id: "SmolLM2-1.7B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -849,7 +849,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/SmolLM2-1.7B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/SmolLM2-1.7B-Instruct-q4f32_1-MLC",
       model_id: "SmolLM2-1.7B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -863,7 +863,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
 
     {
-      model: "https://huggingface.co/mlc-ai/SmolLM2-360M-Instruct-q0f16-MLC",
+      model: "https://canxp.ai/models/SmolLM2-360M-Instruct-q0f16-MLC",
       model_id: "SmolLM2-360M-Instruct-q0f16-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -877,7 +877,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/SmolLM2-360M-Instruct-q0f32-MLC",
+      model: "https://canxp.ai/models/SmolLM2-360M-Instruct-q0f32-MLC",
       model_id: "SmolLM2-360M-Instruct-q0f32-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -890,7 +890,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/SmolLM2-360M-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/SmolLM2-360M-Instruct-q4f16_1-MLC",
       model_id: "SmolLM2-360M-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -904,7 +904,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/SmolLM2-360M-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/SmolLM2-360M-Instruct-q4f32_1-MLC",
       model_id: "SmolLM2-360M-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -917,7 +917,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/SmolLM2-135M-Instruct-q0f16-MLC",
+      model: "https://canxp.ai/models/SmolLM2-135M-Instruct-q0f16-MLC",
       model_id: "SmolLM2-135M-Instruct-q0f16-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -931,7 +931,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/SmolLM2-135M-Instruct-q0f32-MLC",
+      model: "https://canxp.ai/models/SmolLM2-135M-Instruct-q0f32-MLC",
       model_id: "SmolLM2-135M-Instruct-q0f32-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -945,7 +945,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Gemma2
     {
-      model: "https://huggingface.co/mlc-ai/gemma-2-2b-it-q4f16_1-MLC",
+      model: "https://canxp.ai/models/gemma-2-2b-it-q4f16_1-MLC",
       model_id: "gemma-2-2b-it-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -959,7 +959,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/gemma-2-2b-it-q4f32_1-MLC",
+      model: "https://canxp.ai/models/gemma-2-2b-it-q4f32_1-MLC",
       model_id: "gemma-2-2b-it-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -972,7 +972,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/gemma-2-2b-it-q4f16_1-MLC",
+      model: "https://canxp.ai/models/gemma-2-2b-it-q4f16_1-MLC",
       model_id: "gemma-2-2b-it-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -986,7 +986,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/gemma-2-2b-it-q4f32_1-MLC",
+      model: "https://canxp.ai/models/gemma-2-2b-it-q4f32_1-MLC",
       model_id: "gemma-2-2b-it-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -999,7 +999,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/gemma-2-9b-it-q4f16_1-MLC",
+      model: "https://canxp.ai/models/gemma-2-9b-it-q4f16_1-MLC",
       model_id: "gemma-2-9b-it-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1013,7 +1013,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/gemma-2-9b-it-q4f32_1-MLC",
+      model: "https://canxp.ai/models/gemma-2-9b-it-q4f32_1-MLC",
       model_id: "gemma-2-9b-it-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1027,7 +1027,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Gemma2-2b-jpn
     {
-      model: "https://huggingface.co/mlc-ai/gemma-2-2b-jpn-it-q4f16_1-MLC",
+      model: "https://canxp.ai/models/gemma-2-2b-jpn-it-q4f16_1-MLC",
       model_id: "gemma-2-2b-jpn-it-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1041,7 +1041,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/gemma-2-2b-jpn-it-q4f32_1-MLC",
+      model: "https://canxp.ai/models/gemma-2-2b-jpn-it-q4f32_1-MLC",
       model_id: "gemma-2-2b-jpn-it-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1055,7 +1055,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Qwen-3
     {
-      model: "https://huggingface.co/mlc-ai/Qwen3-0.6B-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen3-0.6B-q4f16_1-MLC",
       model_id: "Qwen3-0.6B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1068,7 +1068,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen3-0.6B-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen3-0.6B-q4f32_1-MLC",
       model_id: "Qwen3-0.6B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1081,7 +1081,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen3-0.6B-q0f16-MLC",
+      model: "https://canxp.ai/models/Qwen3-0.6B-q0f16-MLC",
       model_id: "Qwen3-0.6B-q0f16-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1095,7 +1095,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // TODO: temporarily commenting out q0f32 models due to correctness issues
     // {
-    //   model: "https://huggingface.co/mlc-ai/Qwen3-0.6B-q0f32-MLC",
+    //   model: "https://canxp.ai/models/Qwen3-0.6B-q0f32-MLC",
     //   model_id: "Qwen3-0.6B-q0f32-MLC",
     //   model_lib:
     //     modelLibURLPrefix +
@@ -1108,7 +1108,7 @@ export const prebuiltAppConfig: AppConfig = {
     //   },
     // },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen3-1.7B-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen3-1.7B-q4f16_1-MLC",
       model_id: "Qwen3-1.7B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1121,7 +1121,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen3-1.7B-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen3-1.7B-q4f32_1-MLC",
       model_id: "Qwen3-1.7B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1134,7 +1134,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen3-4B-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen3-4B-q4f16_1-MLC",
       model_id: "Qwen3-4B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1147,7 +1147,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen3-4B-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen3-4B-q4f32_1-MLC",
       model_id: "Qwen3-4B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1160,7 +1160,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen3-8B-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen3-8B-q4f16_1-MLC",
       model_id: "Qwen3-8B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1173,7 +1173,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen3-8B-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen3-8B-q4f32_1-MLC",
       model_id: "Qwen3-8B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1187,7 +1187,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Qwen-2
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2.5-0.5B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-0.5B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-0.5B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1200,7 +1200,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2.5-0.5B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-0.5B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-0.5B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1213,7 +1213,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2.5-0.5B-Instruct-q0f16-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-0.5B-Instruct-q0f16-MLC",
       model_id: "Qwen2.5-0.5B-Instruct-q0f16-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1227,7 +1227,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // TODO: temporarily commenting out q0f32 models due to correctness issues
     // {
-    //   model: "https://huggingface.co/mlc-ai/Qwen2.5-0.5B-Instruct-q0f32-MLC",
+    //   model: "https://canxp.ai/models/Qwen2.5-0.5B-Instruct-q0f32-MLC",
     //   model_id: "Qwen2.5-0.5B-Instruct-q0f32-MLC",
     //   model_lib:
     //     modelLibURLPrefix +
@@ -1240,7 +1240,7 @@ export const prebuiltAppConfig: AppConfig = {
     //   },
     // },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1253,7 +1253,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2.5-1.5B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-1.5B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-1.5B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1266,7 +1266,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2.5-3B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-3B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-3B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1279,7 +1279,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2.5-3B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-3B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-3B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1292,7 +1292,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2.5-7B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-7B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-7B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1305,7 +1305,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2.5-7B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-7B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-7B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1320,7 +1320,7 @@ export const prebuiltAppConfig: AppConfig = {
     // Qwen2.5-Coder
     {
       model:
-        "https://huggingface.co/mlc-ai/Qwen2.5-Coder-0.5B-Instruct-q4f16_1-MLC",
+        "https://canxp.ai/models/Qwen2.5-Coder-0.5B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-Coder-0.5B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1334,7 +1334,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Qwen2.5-Coder-0.5B-Instruct-q4f32_1-MLC",
+        "https://canxp.ai/models/Qwen2.5-Coder-0.5B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-Coder-0.5B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1348,7 +1348,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Qwen2.5-Coder-0.5B-Instruct-q0f16-MLC",
+        "https://canxp.ai/models/Qwen2.5-Coder-0.5B-Instruct-q0f16-MLC",
       model_id: "Qwen2.5-Coder-0.5B-Instruct-q0f16-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1363,7 +1363,7 @@ export const prebuiltAppConfig: AppConfig = {
     // TODO: temporarily commenting out q0f32 models due to correctness issues
     // {
     //   model:
-    //     "https://huggingface.co/mlc-ai/Qwen2.5-Coder-0.5B-Instruct-q0f32-MLC",
+    //     "https://canxp.ai/models/Qwen2.5-Coder-0.5B-Instruct-q0f32-MLC",
     //   model_id: "Qwen2.5-Coder-0.5B-Instruct-q0f32-MLC",
     //   model_lib:
     //     modelLibURLPrefix +
@@ -1377,7 +1377,7 @@ export const prebuiltAppConfig: AppConfig = {
     // },
     {
       model:
-        "https://huggingface.co/mlc-ai/Qwen2.5-Coder-1.5B-Instruct-q4f16_1-MLC",
+        "https://canxp.ai/models/Qwen2.5-Coder-1.5B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-Coder-1.5B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1391,7 +1391,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Qwen2.5-Coder-1.5B-Instruct-q4f32_1-MLC",
+        "https://canxp.ai/models/Qwen2.5-Coder-1.5B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-Coder-1.5B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1405,7 +1405,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Qwen2.5-Coder-3B-Instruct-q4f16_1-MLC",
+        "https://canxp.ai/models/Qwen2.5-Coder-3B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-Coder-3B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1419,7 +1419,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Qwen2.5-Coder-3B-Instruct-q4f32_1-MLC",
+        "https://canxp.ai/models/Qwen2.5-Coder-3B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-Coder-3B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1433,7 +1433,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Qwen2.5-Coder-7B-Instruct-q4f16_1-MLC",
+        "https://canxp.ai/models/Qwen2.5-Coder-7B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-Coder-7B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1447,7 +1447,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Qwen2.5-Coder-7B-Instruct-q4f32_1-MLC",
+        "https://canxp.ai/models/Qwen2.5-Coder-7B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-Coder-7B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1462,7 +1462,7 @@ export const prebuiltAppConfig: AppConfig = {
     // Qwen2.5-Math
     {
       model:
-        "https://huggingface.co/mlc-ai/Qwen2.5-Math-1.5B-Instruct-q4f16_1-MLC",
+        "https://canxp.ai/models/Qwen2.5-Math-1.5B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-Math-1.5B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1476,7 +1476,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Qwen2.5-Math-1.5B-Instruct-q4f32_1-MLC",
+        "https://canxp.ai/models/Qwen2.5-Math-1.5B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-Math-1.5B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1490,7 +1490,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // StableLM-zephyr-1.6B
     {
-      model: "https://huggingface.co/mlc-ai/stablelm-2-zephyr-1_6b-q4f16_1-MLC",
+      model: "https://canxp.ai/models/stablelm-2-zephyr-1_6b-q4f16_1-MLC",
       model_id: "stablelm-2-zephyr-1_6b-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1503,7 +1503,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/stablelm-2-zephyr-1_6b-q4f32_1-MLC",
+      model: "https://canxp.ai/models/stablelm-2-zephyr-1_6b-q4f32_1-MLC",
       model_id: "stablelm-2-zephyr-1_6b-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1516,7 +1516,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/stablelm-2-zephyr-1_6b-q4f16_1-MLC",
+      model: "https://canxp.ai/models/stablelm-2-zephyr-1_6b-q4f16_1-MLC",
       model_id: "stablelm-2-zephyr-1_6b-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1529,7 +1529,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/stablelm-2-zephyr-1_6b-q4f32_1-MLC",
+      model: "https://canxp.ai/models/stablelm-2-zephyr-1_6b-q4f32_1-MLC",
       model_id: "stablelm-2-zephyr-1_6b-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1544,7 +1544,7 @@ export const prebuiltAppConfig: AppConfig = {
     // RedPajama
     {
       model:
-        "https://huggingface.co/mlc-ai/RedPajama-INCITE-Chat-3B-v1-q4f16_1-MLC",
+        "https://canxp.ai/models/RedPajama-INCITE-Chat-3B-v1-q4f16_1-MLC",
       model_id: "RedPajama-INCITE-Chat-3B-v1-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1559,7 +1559,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/RedPajama-INCITE-Chat-3B-v1-q4f32_1-MLC",
+        "https://canxp.ai/models/RedPajama-INCITE-Chat-3B-v1-q4f32_1-MLC",
       model_id: "RedPajama-INCITE-Chat-3B-v1-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1573,7 +1573,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/RedPajama-INCITE-Chat-3B-v1-q4f16_1-MLC",
+        "https://canxp.ai/models/RedPajama-INCITE-Chat-3B-v1-q4f16_1-MLC",
       model_id: "RedPajama-INCITE-Chat-3B-v1-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1588,7 +1588,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/RedPajama-INCITE-Chat-3B-v1-q4f32_1-MLC",
+        "https://canxp.ai/models/RedPajama-INCITE-Chat-3B-v1-q4f32_1-MLC",
       model_id: "RedPajama-INCITE-Chat-3B-v1-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1603,7 +1603,7 @@ export const prebuiltAppConfig: AppConfig = {
     // TinyLlama v1.0
     {
       model:
-        "https://huggingface.co/mlc-ai/TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC",
+        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1618,7 +1618,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC",
+        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1632,7 +1632,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC",
+        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1647,7 +1647,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC",
+        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1662,7 +1662,7 @@ export const prebuiltAppConfig: AppConfig = {
     // BELOW ARE MODELS OF OLDER VERSIONS OR NOT AS PRACTICAL
     // Llama-3.1 70B
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3.1-70B-Instruct-q3f16_1-MLC",
+      model: "https://canxp.ai/models/Llama-3.1-70B-Instruct-q3f16_1-MLC",
       model_id: "Llama-3.1-70B-Instruct-q3f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1676,7 +1676,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Qwen-2
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2-0.5B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2-0.5B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2-0.5B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1689,7 +1689,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2-0.5B-Instruct-q0f16-MLC",
+      model: "https://canxp.ai/models/Qwen2-0.5B-Instruct-q0f16-MLC",
       model_id: "Qwen2-0.5B-Instruct-q0f16-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1703,7 +1703,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // TODO: temporarily commenting out q0f32 models due to correctness issues
     // {
-    //   model: "https://huggingface.co/mlc-ai/Qwen2-0.5B-Instruct-q0f32-MLC",
+    //   model: "https://canxp.ai/models/Qwen2-0.5B-Instruct-q0f32-MLC",
     //   model_id: "Qwen2-0.5B-Instruct-q0f32-MLC",
     //   model_lib:
     //     modelLibURLPrefix +
@@ -1716,7 +1716,7 @@ export const prebuiltAppConfig: AppConfig = {
     //   },
     // },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2-1.5B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2-1.5B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2-1.5B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1729,7 +1729,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2-1.5B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen2-1.5B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2-1.5B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1742,7 +1742,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2-7B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2-7B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2-7B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1755,7 +1755,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2-7B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen2-7B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2-7B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1770,7 +1770,7 @@ export const prebuiltAppConfig: AppConfig = {
     // Qwen2-Math
     {
       model:
-        "https://huggingface.co/mlc-ai/Qwen2-Math-1.5B-Instruct-q4f16_1-MLC",
+        "https://canxp.ai/models/Qwen2-Math-1.5B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2-Math-1.5B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1784,7 +1784,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/Qwen2-Math-1.5B-Instruct-q4f32_1-MLC",
+        "https://canxp.ai/models/Qwen2-Math-1.5B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2-Math-1.5B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1797,7 +1797,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2-Math-7B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2-Math-7B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2-Math-7B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1810,7 +1810,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Qwen2-Math-7B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen2-Math-7B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2-Math-7B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1824,7 +1824,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Llama-3
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3-8B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Llama-3-8B-Instruct-q4f32_1-MLC",
       model_id: "Llama-3-8B-Instruct-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1837,7 +1837,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3-8B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Llama-3-8B-Instruct-q4f16_1-MLC",
       model_id: "Llama-3-8B-Instruct-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1850,7 +1850,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3-8B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Llama-3-8B-Instruct-q4f32_1-MLC",
       model_id: "Llama-3-8B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1863,7 +1863,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3-8B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Llama-3-8B-Instruct-q4f16_1-MLC",
       model_id: "Llama-3-8B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1876,7 +1876,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-3-70B-Instruct-q3f16_1-MLC",
+      model: "https://canxp.ai/models/Llama-3-70B-Instruct-q3f16_1-MLC",
       model_id: "Llama-3-70B-Instruct-q3f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1890,7 +1890,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Phi3-mini-instruct
     {
-      model: "https://huggingface.co/mlc-ai/Phi-3-mini-4k-instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Phi-3-mini-4k-instruct-q4f16_1-MLC",
       model_id: "Phi-3-mini-4k-instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1903,7 +1903,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Phi-3-mini-4k-instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Phi-3-mini-4k-instruct-q4f32_1-MLC",
       model_id: "Phi-3-mini-4k-instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1916,7 +1916,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Phi-3-mini-4k-instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Phi-3-mini-4k-instruct-q4f16_1-MLC",
       model_id: "Phi-3-mini-4k-instruct-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1929,7 +1929,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Phi-3-mini-4k-instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Phi-3-mini-4k-instruct-q4f32_1-MLC",
       model_id: "Phi-3-mini-4k-instruct-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1943,7 +1943,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Llama-2
     {
-      model: "https://huggingface.co/mlc-ai/Llama-2-7b-chat-hf-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Llama-2-7b-chat-hf-q4f32_1-MLC",
       model_id: "Llama-2-7b-chat-hf-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1956,7 +1956,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-2-7b-chat-hf-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Llama-2-7b-chat-hf-q4f16_1-MLC",
       model_id: "Llama-2-7b-chat-hf-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1970,7 +1970,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-2-7b-chat-hf-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Llama-2-7b-chat-hf-q4f32_1-MLC",
       model_id: "Llama-2-7b-chat-hf-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1983,7 +1983,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-2-7b-chat-hf-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Llama-2-7b-chat-hf-q4f16_1-MLC",
       model_id: "Llama-2-7b-chat-hf-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1997,7 +1997,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/Llama-2-13b-chat-hf-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Llama-2-13b-chat-hf-q4f16_1-MLC",
       model_id: "Llama-2-13b-chat-hf-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -2012,7 +2012,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Gemma-2B
     {
-      model: "https://huggingface.co/mlc-ai/gemma-2b-it-q4f16_1-MLC",
+      model: "https://canxp.ai/models/gemma-2b-it-q4f16_1-MLC",
       model_id: "gemma-2b-it-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -2027,7 +2027,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/gemma-2b-it-q4f32_1-MLC",
+      model: "https://canxp.ai/models/gemma-2b-it-q4f32_1-MLC",
       model_id: "gemma-2b-it-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -2041,7 +2041,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/gemma-2b-it-q4f16_1-MLC",
+      model: "https://canxp.ai/models/gemma-2b-it-q4f16_1-MLC",
       model_id: "gemma-2b-it-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -2056,7 +2056,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/gemma-2b-it-q4f32_1-MLC",
+      model: "https://canxp.ai/models/gemma-2b-it-q4f32_1-MLC",
       model_id: "gemma-2b-it-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -2071,7 +2071,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Phi-2
     {
-      model: "https://huggingface.co/mlc-ai/phi-2-q4f16_1-MLC",
+      model: "https://canxp.ai/models/phi-2-q4f16_1-MLC",
       model_id: "phi-2-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -2085,7 +2085,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/phi-2-q4f32_1-MLC",
+      model: "https://canxp.ai/models/phi-2-q4f32_1-MLC",
       model_id: "phi-2-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -2098,7 +2098,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/phi-2-q4f16_1-MLC",
+      model: "https://canxp.ai/models/phi-2-q4f16_1-MLC",
       model_id: "phi-2-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -2112,7 +2112,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/phi-2-q4f32_1-MLC",
+      model: "https://canxp.ai/models/phi-2-q4f32_1-MLC",
       model_id: "phi-2-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -2126,7 +2126,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Phi-1.5
     {
-      model: "https://huggingface.co/mlc-ai/phi-1_5-q4f16_1-MLC",
+      model: "https://canxp.ai/models/phi-1_5-q4f16_1-MLC",
       model_id: "phi-1_5-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -2140,7 +2140,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/phi-1_5-q4f32_1-MLC",
+      model: "https://canxp.ai/models/phi-1_5-q4f32_1-MLC",
       model_id: "phi-1_5-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -2153,7 +2153,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/phi-1_5-q4f16_1-MLC",
+      model: "https://canxp.ai/models/phi-1_5-q4f16_1-MLC",
       model_id: "phi-1_5-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -2167,7 +2167,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model: "https://huggingface.co/mlc-ai/phi-1_5-q4f32_1-MLC",
+      model: "https://canxp.ai/models/phi-1_5-q4f32_1-MLC",
       model_id: "phi-1_5-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -2182,7 +2182,7 @@ export const prebuiltAppConfig: AppConfig = {
     // TinyLlama v0.4
     {
       model:
-        "https://huggingface.co/mlc-ai/TinyLlama-1.1B-Chat-v0.4-q4f16_1-MLC",
+        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v0.4-q4f16_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v0.4-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -2197,7 +2197,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/TinyLlama-1.1B-Chat-v0.4-q4f32_1-MLC",
+        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v0.4-q4f32_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v0.4-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -2211,7 +2211,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/TinyLlama-1.1B-Chat-v0.4-q4f16_1-MLC",
+        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v0.4-q4f16_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v0.4-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -2226,7 +2226,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     {
       model:
-        "https://huggingface.co/mlc-ai/TinyLlama-1.1B-Chat-v0.4-q4f32_1-MLC",
+        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v0.4-q4f32_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v0.4-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -2241,7 +2241,7 @@ export const prebuiltAppConfig: AppConfig = {
     // Embedding models
     // -b means max_batch_size this model allows. The smaller it is, the less memory the model consumes.
     {
-      model: "https://huggingface.co/mlc-ai/snowflake-arctic-embed-m-q0f32-MLC",
+      model: "https://canxp.ai/models/snowflake-arctic-embed-m-q0f32-MLC",
       model_id: "snowflake-arctic-embed-m-q0f32-MLC-b32",
       model_lib:
         modelLibURLPrefix +
@@ -2251,7 +2251,7 @@ export const prebuiltAppConfig: AppConfig = {
       model_type: ModelType.embedding,
     },
     {
-      model: "https://huggingface.co/mlc-ai/snowflake-arctic-embed-m-q0f32-MLC",
+      model: "https://canxp.ai/models/snowflake-arctic-embed-m-q0f32-MLC",
       model_id: "snowflake-arctic-embed-m-q0f32-MLC-b4",
       model_lib:
         modelLibURLPrefix +
@@ -2261,7 +2261,7 @@ export const prebuiltAppConfig: AppConfig = {
       model_type: ModelType.embedding,
     },
     {
-      model: "https://huggingface.co/mlc-ai/snowflake-arctic-embed-s-q0f32-MLC",
+      model: "https://canxp.ai/models/snowflake-arctic-embed-s-q0f32-MLC",
       model_id: "snowflake-arctic-embed-s-q0f32-MLC-b32",
       model_lib:
         modelLibURLPrefix +
@@ -2271,7 +2271,7 @@ export const prebuiltAppConfig: AppConfig = {
       model_type: ModelType.embedding,
     },
     {
-      model: "https://huggingface.co/mlc-ai/snowflake-arctic-embed-s-q0f32-MLC",
+      model: "https://canxp.ai/models/snowflake-arctic-embed-s-q0f32-MLC",
       model_id: "snowflake-arctic-embed-s-q0f32-MLC-b4",
       model_lib:
         modelLibURLPrefix +
