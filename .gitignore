@@ -193,7 +193,6 @@ xcuserdata/
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
@@ -320,7 +319,6 @@ gallery/how_to/work_with_microtvm/micro_tvmc.py
 dist
 tvm_home
 node_modules
-lib
 .parcel-cache
 
 **/.next
