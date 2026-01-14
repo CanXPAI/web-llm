@@ -89,19 +89,17 @@ export function getTokenTableFromTokenizer(tokenizer: Tokenizer): string[] {
  */
 export function cleanModelUrl(modelUrl?: string): string {
   if (!modelUrl) {
-    throw new Error(
-      "[WebLLM] Model URL is undefined. ModelRecord.model must be set.",
-    );
+    throw new Error("[WebLLM] Model URL is undefined");
   }
 
-  // Non-HuggingFace URLs (CanXP CDN, local, etc)
+  // Non-HF URLs: force trailing slash
   if (!modelUrl.includes("huggingface.co")) {
-    return new URL(modelUrl).href;
+    const url = modelUrl.endsWith("/") ? modelUrl : modelUrl + "/";
+    return new URL(url).href;
   }
 
-  // Hugging Face normalization (legacy path)
-  let url = modelUrl;
-  url += url.endsWith("/") ? "" : "/";
+  // HF logic unchanged
+  let url = modelUrl.endsWith("/") ? modelUrl : modelUrl + "/";
   if (!url.match(/.+\/resolve\/.+\//)) {
     url += "resolve/main/";
   }
