@@ -254,8 +254,12 @@ export class LLMChatPipeline {
     }
 
     // 5. Consolidate KVCache settings: context window, sliding window, attention sink
-    this.slidingWindowSize = config.sliding_window_size;
-    this.contextWindowSize = config.context_window_size;
+    this.slidingWindowSize =
+    config.sliding_window_size ?? -1;
+
+    this.contextWindowSize =
+    config.context_window_size ?? -1;
+
     this.attentionSinkSize = config.attention_sink_size;
     if (this.contextWindowSize !== -1 && this.slidingWindowSize !== -1) {
       throw new WindowSizeConfigurationError(
