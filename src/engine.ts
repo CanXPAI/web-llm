@@ -243,6 +243,8 @@ export class MLCEngine implements MLCEngineInterface {
     const logitProcessor = this.logitProcessorRegistry?.get(modelId);
     const tstart = performance.now();
 
+    console.log("[WebLLM] reloadInternal modelId:", modelId);
+
     // look up and parse model record, record model type
     const modelRecord = findModelRecord(modelId, this.appConfig);
     const baseUrl =
