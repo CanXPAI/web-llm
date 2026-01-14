@@ -28,7 +28,7 @@ export declare function getTokenTableFromTokenizer(tokenizer: Tokenizer): string
  * e.g. https://huggingface.co/mlc-ai/OpenHermes-2.5-Mistral-7B-q4f16_1-MLC/resolve/main/
  * @return the href of the final URL.
  */
-export declare function cleanModelUrl(modelUrl: string): string;
+export declare function cleanModelUrl(modelUrl?: string): string;
 /**
  * Json schema used to prompt the model for function calling; directly copied from the official guide.
  * This represents to a single function call.

@@ -26,6 +26,9 @@ export interface ConvTemplateConfig {
   add_role_after_system_message?: boolean;
 }
 
+export const CANXP_MODEL_URL =
+  "https://canxp.ai/models/Llama-3.2-1B-Instruct-q4f32_1-MLC";
+
 export enum Role {
   user = "user",
   assistant = "assistant",
@@ -288,8 +291,7 @@ export interface AppConfig {
  * requires an update of the model libraries.
  */
 export const modelVersion = "v0_2_80";
-export const modelLibURLPrefix =
-  "https://canxp.ai/web-llm-models/";
+export const modelLibURLPrefix = "https://canxp.ai/web-llm-models/";
 
 /**
  * Models that support function calling (i.e. usage of `ChatCompletionRequest.tools`). More to come.
@@ -473,8 +475,7 @@ export const prebuiltAppConfig: AppConfig = {
     //   },
     // },
     {
-      model:
-        "https://canxp.ai/models/DeepSeek-R1-Distill-Qwen-7B-q4f16_1-MLC",
+      model: "https://canxp.ai/models/DeepSeek-R1-Distill-Qwen-7B-q4f16_1-MLC",
       model_id: "DeepSeek-R1-Distill-Qwen-7B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -487,8 +488,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/DeepSeek-R1-Distill-Qwen-7B-q4f32_1-MLC",
+      model: "https://canxp.ai/models/DeepSeek-R1-Distill-Qwen-7B-q4f32_1-MLC",
       model_id: "DeepSeek-R1-Distill-Qwen-7B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -502,8 +502,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // DeepSeek-R1-Distill-Llama
     {
-      model:
-        "https://canxp.ai/models/DeepSeek-R1-Distill-Llama-8B-q4f32_1-MLC",
+      model: "https://canxp.ai/models/DeepSeek-R1-Distill-Llama-8B-q4f32_1-MLC",
       model_id: "DeepSeek-R1-Distill-Llama-8B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -516,8 +515,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/DeepSeek-R1-Distill-Llama-8B-q4f16_1-MLC",
+      model: "https://canxp.ai/models/DeepSeek-R1-Distill-Llama-8B-q4f16_1-MLC",
       model_id: "DeepSeek-R1-Distill-Llama-8B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -531,8 +529,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Hermes-3 and Hermes-2
     {
-      model:
-        "https://canxp.ai/models/Hermes-2-Theta-Llama-3-8B-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Hermes-2-Theta-Llama-3-8B-q4f16_1-MLC",
       model_id: "Hermes-2-Theta-Llama-3-8B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -545,8 +542,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Hermes-2-Theta-Llama-3-8B-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Hermes-2-Theta-Llama-3-8B-q4f32_1-MLC",
       model_id: "Hermes-2-Theta-Llama-3-8B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -559,8 +555,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Hermes-2-Pro-Llama-3-8B-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Hermes-2-Pro-Llama-3-8B-q4f16_1-MLC",
       model_id: "Hermes-2-Pro-Llama-3-8B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -573,8 +568,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Hermes-2-Pro-Llama-3-8B-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Hermes-2-Pro-Llama-3-8B-q4f32_1-MLC",
       model_id: "Hermes-2-Pro-Llama-3-8B-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -639,8 +633,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Hermes-2-Pro-Mistral-7B-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Hermes-2-Pro-Mistral-7B-q4f16_1-MLC",
       model_id: "Hermes-2-Pro-Mistral-7B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -709,8 +702,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Phi-3.5-vision-instruct
     {
-      model:
-        "https://canxp.ai/models/Phi-3.5-vision-instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Phi-3.5-vision-instruct-q4f16_1-MLC",
       model_id: "Phi-3.5-vision-instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -724,8 +716,7 @@ export const prebuiltAppConfig: AppConfig = {
       model_type: ModelType.VLM,
     },
     {
-      model:
-        "https://canxp.ai/models/Phi-3.5-vision-instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Phi-3.5-vision-instruct-q4f32_1-MLC",
       model_id: "Phi-3.5-vision-instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -740,8 +731,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Mistral variants
     {
-      model:
-        "https://canxp.ai/models/Mistral-7B-Instruct-v0.3-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Mistral-7B-Instruct-v0.3-q4f16_1-MLC",
       model_id: "Mistral-7B-Instruct-v0.3-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -756,8 +746,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Mistral-7B-Instruct-v0.3-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Mistral-7B-Instruct-v0.3-q4f32_1-MLC",
       model_id: "Mistral-7B-Instruct-v0.3-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -771,8 +760,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Mistral-7B-Instruct-v0.2-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Mistral-7B-Instruct-v0.2-q4f16_1-MLC",
       model_id: "Mistral-7B-Instruct-v0.2-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -787,8 +775,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/OpenHermes-2.5-Mistral-7B-q4f16_1-MLC",
+      model: "https://canxp.ai/models/OpenHermes-2.5-Mistral-7B-q4f16_1-MLC",
       model_id: "OpenHermes-2.5-Mistral-7B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -803,8 +790,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/NeuralHermes-2.5-Mistral-7B-q4f16_1-MLC",
+      model: "https://canxp.ai/models/NeuralHermes-2.5-Mistral-7B-q4f16_1-MLC",
       model_id: "NeuralHermes-2.5-Mistral-7B-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1319,8 +1305,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Qwen2.5-Coder
     {
-      model:
-        "https://canxp.ai/models/Qwen2.5-Coder-0.5B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-Coder-0.5B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-Coder-0.5B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1333,8 +1318,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Qwen2.5-Coder-0.5B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-Coder-0.5B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-Coder-0.5B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1347,8 +1331,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Qwen2.5-Coder-0.5B-Instruct-q0f16-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-Coder-0.5B-Instruct-q0f16-MLC",
       model_id: "Qwen2.5-Coder-0.5B-Instruct-q0f16-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1376,8 +1359,7 @@ export const prebuiltAppConfig: AppConfig = {
     //   },
     // },
     {
-      model:
-        "https://canxp.ai/models/Qwen2.5-Coder-1.5B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-Coder-1.5B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-Coder-1.5B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1390,8 +1372,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Qwen2.5-Coder-1.5B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-Coder-1.5B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-Coder-1.5B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1404,8 +1385,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Qwen2.5-Coder-3B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-Coder-3B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-Coder-3B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1418,8 +1398,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Qwen2.5-Coder-3B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-Coder-3B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-Coder-3B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1432,8 +1411,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Qwen2.5-Coder-7B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-Coder-7B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-Coder-7B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1446,8 +1424,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Qwen2.5-Coder-7B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-Coder-7B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-Coder-7B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1461,8 +1438,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Qwen2.5-Math
     {
-      model:
-        "https://canxp.ai/models/Qwen2.5-Math-1.5B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-Math-1.5B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2.5-Math-1.5B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1475,8 +1451,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Qwen2.5-Math-1.5B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen2.5-Math-1.5B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2.5-Math-1.5B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1543,8 +1518,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // RedPajama
     {
-      model:
-        "https://canxp.ai/models/RedPajama-INCITE-Chat-3B-v1-q4f16_1-MLC",
+      model: "https://canxp.ai/models/RedPajama-INCITE-Chat-3B-v1-q4f16_1-MLC",
       model_id: "RedPajama-INCITE-Chat-3B-v1-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1558,8 +1532,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/RedPajama-INCITE-Chat-3B-v1-q4f32_1-MLC",
+      model: "https://canxp.ai/models/RedPajama-INCITE-Chat-3B-v1-q4f32_1-MLC",
       model_id: "RedPajama-INCITE-Chat-3B-v1-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1572,8 +1545,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/RedPajama-INCITE-Chat-3B-v1-q4f16_1-MLC",
+      model: "https://canxp.ai/models/RedPajama-INCITE-Chat-3B-v1-q4f16_1-MLC",
       model_id: "RedPajama-INCITE-Chat-3B-v1-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1587,8 +1559,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/RedPajama-INCITE-Chat-3B-v1-q4f32_1-MLC",
+      model: "https://canxp.ai/models/RedPajama-INCITE-Chat-3B-v1-q4f32_1-MLC",
       model_id: "RedPajama-INCITE-Chat-3B-v1-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1602,8 +1573,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // TinyLlama v1.0
     {
-      model:
-        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC",
+      model: "https://canxp.ai/models/TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1617,8 +1587,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC",
+      model: "https://canxp.ai/models/TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1631,8 +1600,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC",
+      model: "https://canxp.ai/models/TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1646,8 +1614,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC",
+      model: "https://canxp.ai/models/TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -1769,8 +1736,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // Qwen2-Math
     {
-      model:
-        "https://canxp.ai/models/Qwen2-Math-1.5B-Instruct-q4f16_1-MLC",
+      model: "https://canxp.ai/models/Qwen2-Math-1.5B-Instruct-q4f16_1-MLC",
       model_id: "Qwen2-Math-1.5B-Instruct-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -1783,8 +1749,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/Qwen2-Math-1.5B-Instruct-q4f32_1-MLC",
+      model: "https://canxp.ai/models/Qwen2-Math-1.5B-Instruct-q4f32_1-MLC",
       model_id: "Qwen2-Math-1.5B-Instruct-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -2181,8 +2146,7 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // TinyLlama v0.4
     {
-      model:
-        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v0.4-q4f16_1-MLC",
+      model: "https://canxp.ai/models/TinyLlama-1.1B-Chat-v0.4-q4f16_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v0.4-q4f16_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -2196,8 +2160,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v0.4-q4f32_1-MLC",
+      model: "https://canxp.ai/models/TinyLlama-1.1B-Chat-v0.4-q4f32_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v0.4-q4f32_1-MLC",
       model_lib:
         modelLibURLPrefix +
@@ -2210,8 +2173,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v0.4-q4f16_1-MLC",
+      model: "https://canxp.ai/models/TinyLlama-1.1B-Chat-v0.4-q4f16_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v0.4-q4f16_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +
@@ -2225,8 +2187,7 @@ export const prebuiltAppConfig: AppConfig = {
       },
     },
     {
-      model:
-        "https://canxp.ai/models/TinyLlama-1.1B-Chat-v0.4-q4f32_1-MLC",
+      model: "https://canxp.ai/models/TinyLlama-1.1B-Chat-v0.4-q4f32_1-MLC",
       model_id: "TinyLlama-1.1B-Chat-v0.4-q4f32_1-MLC-1k",
       model_lib:
         modelLibURLPrefix +

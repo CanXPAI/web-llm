@@ -87,12 +87,26 @@ export function getTokenTableFromTokenizer(tokenizer: Tokenizer): string[] {
  * e.g. https://huggingface.co/mlc-ai/OpenHermes-2.5-Mistral-7B-q4f16_1-MLC/resolve/main/
  * @return the href of the final URL.
  */
-export function cleanModelUrl(modelUrl: string): string {
-  // https://huggingface.co/USER/MODEL -> https://huggingface.co/USER/MODEL/
-  modelUrl += modelUrl.endsWith("/") ? "" : "/";
-  if (!modelUrl.match(/.+\/resolve\/.+\//)) modelUrl += "resolve/main/";
-  // https://huggingface.co/USER/MODEL/ -> https://huggingface.co/USER/MODEL/resolve/main/
-  return new URL(modelUrl).href;
+export function cleanModelUrl(modelUrl?: string): string {
+  if (!modelUrl) {
+    throw new Error(
+      "[WebLLM] Model URL is undefined. ModelRecord.model must be set.",
+    );
+  }
+
+  // Non-HuggingFace URLs (CanXP CDN, local, etc)
+  if (!modelUrl.includes("huggingface.co")) {
+    return new URL(modelUrl).href;
+  }
+
+  // Hugging Face normalization (legacy path)
+  let url = modelUrl;
+  url += url.endsWith("/") ? "" : "/";
+  if (!url.match(/.+\/resolve\/.+\//)) {
+    url += "resolve/main/";
+  }
+
+  return new URL(url).href;
 }
 
 // Constants for Hermes-2-Pro models function calling

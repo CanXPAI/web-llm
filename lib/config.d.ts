@@ -16,6 +16,7 @@ export interface ConvTemplateConfig {
     stop_token_ids: Array<number>;
     add_role_after_system_message?: boolean;
 }
+export declare const CANXP_MODEL_URL = "https://canxp.ai/models/Llama-3.2-1B-Instruct-q4f32_1-MLC";
 export declare enum Role {
     user = "user",
     assistant = "assistant",
