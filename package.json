@@ -28,6 +28,10 @@
       "import": "./lib/index.js",
       "types": "./lib/index.d.ts",
       "default": "./lib/index.js"
+    },
+    "./runtime": {
+      "import": "./lib/index.js",
+      "default": "./lib/index.js"
     }
   },
 
